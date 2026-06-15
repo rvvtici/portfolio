@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"nextjs-dashboard": "link:nextjs-dashboard"
+	}
+}
