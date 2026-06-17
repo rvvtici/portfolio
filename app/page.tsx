@@ -1,19 +1,30 @@
-import Link from 'next/link';
+import Image from "next/image";
 
-
-export default function Page() {
+export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-20">
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Ravi Macedo Ticianelli Lima</strong><br></br>
-            <a href="https://github.com/rvvtici" className="text-black-500">
-              [ github ]
-            </a>
+    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            Ravi Macedo Ticianelli Lima
+          </h1>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            <a
+              href="https://github.com/rvvtici"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              [ github ] 
+            </a>{" "}
+            
+            <a
+              href="https://linkedin.com/in/rvvtici"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              [ linkedin ]
+            </a>{" "}
           </p>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

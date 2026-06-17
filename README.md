@@ -15,4 +15,3 @@ cd nextjs-dashboard/
 # igual react
 pnpm i # instala paacotes do projeto
 pnpm dev # roda no localhost:3000
->>>>>>> 458bc7f6cf27294c4045f10e52e8c8c35610cf55
