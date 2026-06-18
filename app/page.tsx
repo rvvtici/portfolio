@@ -1,39 +1,97 @@
 import SideNav from "./sidenav";
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col dark:bg-black md:flex-row">
+    <div className="flex h-screen w-screen flex-col dark:bg-neutral-950">
+      <div className="flex flex-1 md:flex-row flex-col">
       <SideNav />
-      {/*
-      <div className="flex flex-1 flex-col items-center justify-center overflow-y-auto bg-zinc-50 font-sans dark:bg-black">
-      */}
-        <main className="flex flex-row items-center px-16 py-16 gap-6 sm:items-start">
-          {/*<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          */}
+        <main className="flex flex-1 flex-col  px-12 py-10 gap-0 md:py-16 md:px-16 ">
           <div>
-
-            <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            <h1 className="flex-1 text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
               Ravi Macedo Ticianelli Lima
             </h1>
-            <p className="text-sm max-w-md text-lg leading-8">
+            <p className="text-[13px] leading-5">
               <a
+                target="_blank"
                 href="https://github.com/rvvtici"
                 className=""
                 >
                 [ github ]
               </a>{" "}
               <a
+                target="_blank"
                 href="https://linkedin.com/in/rvvtici"
                 className=""
                 >
                 [ linkedin ]
               </a>
             </p>
+
+            
           </div>
-          {/*</div>*/}
+          <div className="border-b-1 mt-2 mb-2 border-neutral-800">
+          </div>
+
+            <h3 className="text-[11px] tracking-wide font dark:text-zinc-500">
+              SOBRE
+            </h3>
+            <p className="text-[13px] gap-5 tracking-wide font dark:text-zinc-50">
+              Desenvolvedor full-stack
+            </p>
+
+            <p className="text-[11px] tracking-wide font dark:text-zinc-500">
+              Ciência da Computação · São Paulo
+            </p>
+
+
+
+          <div>
+            <h2 className="font-semibold leading-10 dark:text-zinc-50">
+              Formação Acadêmica
+            </h2>
+
+            <div className="flex w-full border-neutral-800 bg-neutral-900 border-1 rounded-xl">
+              <div className="flex p-4 justify-center items-center">
+                <Image
+                  src="/fei.png"
+                  width={30}
+                  height={40}
+                  className="block"
+                  alt="logo fei"
+                  />
+              </div>
+              <div className="flex p-2 justify-start flex-col">
+                <h3 className="font-semibold text-[15px]">
+                Centro Universitário FEI</h3>
+                <h4 className="max-w-sm text-[12px] font dark:text-zinc-500">
+                  Bacharelado em Ciência da Computação
+                </h4>
+                <h4 className="max-w-sm text-[12px] font dark:text-zinc-500">
+                  6º semestre | 01/2024 - 12/2027
+                </h4>
+              
+              </div>   
+            </div>
+
+
+
+
+          </div>
         </main>
-      {/*</div>*/}
+        </div>
+
+        <footer className=" p-2 border-neutral-800 border-t-1 flex justify-center items-center">
+          <h4 className="max-w-sm text-[12px] font dark:text-zinc-500">
+            Created with Next.js, Tailwind CSS and Vercel <br/>rvvtici © 2026 
+          </h4>
+        </footer>
+
+          
+
     </div>
+
+
   );
 }
 
