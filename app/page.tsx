@@ -8,14 +8,14 @@ export default function Home() {
     // <body className="flex h-screen px-[10%] flex-row bg-neutral-950">
   <body>
   
-  <main className="flex h-screen px-[16%] flex-row bg-neutral-950">
-    <div id="left-sidebar" className="text-sm flex-row justify-center items-center border-1 py-[20%] px-[2%] border-neutral-800">
+  <main className="flex px-[16%] flex-row bg-neutral-950">
+     <div id="left-sidebar" className="text-sm flex-row justify-center items-center border-1 py-[20%] px-[2%] border-neutral-800">
         <p>teste</p>
         <p>a</p>
         <p>b</p>
       </div>
       
-      <div id ="center" className="flex flex-1 flex-col border-1 border-neutral-800">
+      <div id ="center" className="flex flex-col border-1 border-neutral-800">
       
       {/* <SideNav /> */}
         {/* <main className="flex flex-1 flex-col gap-0 "> */}
@@ -31,17 +31,17 @@ export default function Home() {
 
           <div id="sobre" className="px-[30px] border-b-1 border-neutral-800 pb-[20px]">
             <div id="sobre-txt">
-              <p className="tracking-wide text-sm font dark:text-zinc-500">
+              <p className="tracking-wide text-xs font dark:text-zinc-500">
                 SOBRE
               </p>
               <p className="font-semibold tracking-normal text-base landing-4 dark:text-zinc-50">
                 Desenvolvedor Full-Stack [...]
               </p>
-              <p className="text-base tracking-wide font dark:text-zinc-500">
+              <p className="text-sm tracking-wide font dark:text-zinc-500">
                 Ciência da Computação · São Paulo [...]
               </p>
             </div>
-            <div id="sobre-contato" className="flex flex-row gap-2 m-[5px]">
+            <div id="sobre-contato" className="flex flex-row gap-2 m-[0px]">
               <a target="_blank" href="https://github.com/rvvtici">
                 <div className="flex flex-row border-neutral-800 bg-neutral-900 hover:border-neutral-700 border-1 px-2 py-[0.75px] rounded-md">
                   <Image src="/github.png" width={20} height={10} className="block p-[1px]" alt="logo github"/>
@@ -65,7 +65,7 @@ export default function Home() {
             <h2 className=" font-bold dark:text-zinc-50 text-lg">
               Experiência Profissional
             </h2>
-            <div id="zeppelin" className="flex flex-row p-1 mr-[4%] mb-6 hover:border-neutral-400 border-neutral-800 my-2 bg-neutral-900 border-1 rounded-xl">
+            <div id="zeppelin" className="flex flex-row p-1 mr-[4%] mb-6 hover:border-neutral-400 border-neutral-800 my-1 bg-neutral-900 border-1 rounded-xl">
               <div id="img-zeppelin"className="flex justify-center items-center">
                 <Image src="/zeppelin.jpg" width={30} height={30} className="block mx-8 rounded-sm" alt="logo zeppelin"/>
               </div>
@@ -142,14 +142,17 @@ export default function Home() {
             Projetos
           </h2>
           <Project 
-            info="CIÊNCIA DA COMPUTAÇÃO · SÃO PAULO" 
-            titulo="FEI-Baja" 
-            descricao="b"
+            info="FRONT-END · PESSOAL" 
+            titulo="Portfólio Pessoal" 
+            descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis, tellus viverra suscipit molestie, metus diam finibus nunc, sed tristique nunc eros a magna. Nulla vulputate leo vitae est gravida, non euismod ligula rutrum. Phasellus metus sapien, mollis ut feugiat in, mattis tempus odio. Donec eget magna placerat, faucibus felis vel, consequat ipsum. Phasellus vel accumsan nunc. Integer at molestie dui, ac dictum dui. Curabitur auctor et quam nec aliquam."
             tags = {[
-              {titulo: "a"}
+              {titulo: "Next.js"},
+              {titulo: "Tailwind CSS"},
+              {titulo: "Vercel"}
+
             ]}
             links={[
-              {titulo: "a", url: "a"}
+              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
             
