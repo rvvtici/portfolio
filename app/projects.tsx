@@ -19,7 +19,7 @@ type Tag = {
 
 export default function Project({titulo, descricao, info, tags, links}: ProjectProps) {
   return (
-    <div id="card" className="flex py-2 px-4 flex-row mr-[4%] mb-6 p-1 hover:border-neutral-400 transition delay-20 border-neutral-800 my-2 bg-neutral-900 border-1 rounded-xl">
+    <div id="card" className="flex flex-row mb-4 p-5 hover:border-neutral-400 transition delay-20 border-neutral-800 my-2 bg-neutral-900 border-1 rounded-xl">
         {/* <div id="img"className="flex justify-center items-center">
             {imagem && <img src={imagem} width={30} height={30} className="block mx-4 rounded-sm" alt={titulo}/>}
         </div> */}
@@ -42,7 +42,7 @@ export default function Project({titulo, descricao, info, tags, links}: ProjectP
                     Lógica de Programação, Comunicação, Organização, Trabalho em Equipe, Documentação Técnica
                   </p> */}
                 {tags?.map((tag) => (
-                    <p className="flex my-1 flex-row border-neutral-800 hover:border-neutral-700 text-sm border-1 px-2 py-[0.2px] rounded-md">
+                    <p key={tag.titulo} className="flex whitespace-nowrap my-1 flex-row border-neutral-800 hover:border-neutral-700 text-sm border-1 px-2 py-[0.2px] rounded-md">
                         {tag.titulo}
                     </p>    
                 ))}

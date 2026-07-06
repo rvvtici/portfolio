@@ -1,17 +1,17 @@
-# portfolio
+# Portfólio
 
-https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages
+rvvtici.vercel.app
 
-ferramentas:
-- vercel (hostear o site)
-- Next.JS (mesmos criadores do vercel)
-- talwind css (alta conectividade com next.js)
+#### portfólio pessoal criado com:
+- [Next.JS](https://nextjs.org/learn) (mesmos criadores do vercel)
+- Talwind CSS (alta conectividade com next.js)
+- Vercel (hostear o site)
 
 
-## instalação
+
+#### Instalação
 ```
 sudo pacman -S pnpm
-cd nextjs-dashboard/
-# igual react
 pnpm i # instala paacotes do projeto
 pnpm dev # roda no localhost:3000
+```
