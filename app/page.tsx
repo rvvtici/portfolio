@@ -53,6 +53,16 @@ export default function Home() {
               </p>
             </div>
             <div id="sobre-contato" className="flex flex-row gap-2 m-[0px]">
+              
+              <a target="_blank" href="rvvtici@gmail.com">
+                <div className="flex flex-row border-neutral-800 bg-neutral-900 hover:border-neutral-700 border-1 px-2 py-[0.75px] rounded-md">
+                  {/* <Image src="/fei.png" width={20} height={10} className="block p-[1px]" alt="logo github"/> */}
+                  <p className="pt-[2px] text-sm">
+                    Email
+                  </p>
+                </div>
+              </a>
+
               <a target="_blank" href="https://github.com/rvvtici">
                 <div className="flex flex-row border-neutral-800 bg-neutral-900 hover:border-neutral-700 border-1 px-2 py-[0.75px] rounded-md">
                   <Image src="/github.png" width={20} height={10} className="block p-[1px]" alt="logo github"/>
@@ -70,7 +80,7 @@ export default function Home() {
                 </div>
               </a>
 
-              <a target="_blank" href="https://linkedin.com/in/rvvtici">
+              <a target="_blank" href="/Currículo - Ravi Macedo Ticianelli Lima.pdf">
                 <div className="flex flex-row border-neutral-800 bg-neutral-900 hover:border-neutral-700 border-1 px-2 py-[0.75px] rounded-md">
                   <p className="pt-[2px] text-sm">
                     ↗ Currículo
@@ -216,7 +226,9 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "Live Demo", tipo: "demo", url: "https://snack.expo.dev/@rvvtici/clinica-medica"},
+              {titulo: "GitHub", tipo: "padrao", url: "https://github.com/rvvtici/portfolio"},
+              
             ]}
           >
           </Project>
