@@ -116,8 +116,8 @@ export default function Home() {
 
             ]}
             logo="/zeppelin.jpg"
-            logoW="24"
-            logoH="24"
+            logoW={24}
+            logoH={24}
             ferramentas = {[
               {titulo: "Power Automate"},
               {titulo: "Excel"},
@@ -150,8 +150,8 @@ export default function Home() {
             inicio="01/2024"
             conclusao="12/2027"
             logo="/fei.png"
-            logoW="30" //arrumar aq
-            logoH="30"
+            logoW={30}
+            logoH={30}
             >
             
           </Education>
@@ -177,7 +177,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
@@ -193,7 +193,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
@@ -210,7 +210,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
@@ -227,7 +227,7 @@ export default function Home() {
             ]}
             links={[
               {titulo: "Live Demo", tipo: "demo", url: "https://snack.expo.dev/@rvvtici/clinica-medica"},
-              {titulo: "GitHub", tipo: "padrao", url: "https://github.com/rvvtici/portfolio"},
+              {titulo: "GitHub", tipo: "base", url: "https://github.com/rvvtici/portfolio"},
               
             ]}
           >
@@ -245,7 +245,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
@@ -261,7 +261,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
@@ -278,7 +278,7 @@ export default function Home() {
 
             ]}
             links={[
-              {titulo: "GitHub", url: "https://github.com/rvvtici/portfolio"}
+              {titulo: "GitHub", tipo:"base", url: "https://github.com/rvvtici/portfolio"}
             ]}
           >
           </Project>
