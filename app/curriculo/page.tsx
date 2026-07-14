@@ -2,7 +2,7 @@
 export default function Curriculo() {
   return (
     <div>
-      <h1>x</h1>
+      <h1></h1>
     </div>
   );
 }

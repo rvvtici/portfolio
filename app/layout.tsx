@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SideNav from "./sidenav";
 import { inter } from '@/app/fonts';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+import { GeistPixelSquare, GeistPixelGrid, GeistPixelCircle, GeistPixelTriangle, GeistPixelLine } from 'geist/font/pixel';
+
 
 export default function RootLayout({
   children,
