@@ -185,18 +185,24 @@ export default function Compilador() {
     setCarregando(false); // ao completar, para de carregar
   }
 
+  // src="/linkedin.png"
+  //bg-[url(https://www.nasa.gov/wp-content/uploads/2026/07/55379860699-326a74df60-o.jpg)] 
+  //bg-[url(/wallpaper-tminus.png)] 
+  
+  
+  //bg-auto ou bg-cover
   return (
-    // src="/linkedin.png"
-    //bg-[url(https://www.nasa.gov/wp-content/uploads/2026/07/55379860699-326a74df60-o.jpg)] 
-    //bg-[url(/wallpaper-tminus.png)] 
+    <>
+      <link
+        rel="preload"
+        href="/wallpaper-tminus.png"
+        as="image"
+      />
 
-
-    //bg-auto ou bg-cover
-    <div className={`${GeistSans.className} 
-    bg-[url(/wallpaper-tminus.png)] 
-    
-    bg-auto flex justify-center flex-col lg:h-screen lg:p-0 p-10 items-center`}>
-      <h1 className="font-bold text-6xl mb-">T-Minus</h1>
+      <div className={`${GeistSans.className} 
+        bg-[url(/wallpaper-tminus.png)] 
+        bg-auto flex justify-center flex-col h-screen lg:p-0 p-10 items-center`}>
+        <h1 className="font-bold text-6xl mb-">T-Minus</h1>
       <p className="font-base text-xs lg:mx-70 mb-1 text-white text-center">
         linguagem de programação desenvolvida em Java com compilador traduzindo para Pascal.
       </p>
@@ -270,5 +276,6 @@ export default function Compilador() {
         {/* <p className="text-sm"> rvvtici @ 2026</p> */}
 
       </div>
+      </>
   );
 }
