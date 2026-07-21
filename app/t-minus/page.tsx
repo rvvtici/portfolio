@@ -1,140 +1,12 @@
 'use client';
 
-//todo: responsividade textarea celular, exemplos em exemplos.md, bg-auto ou bg-cover, rotacao background, selection: bg white txt black
+//todo: responsividade textarea celular, OK exemplos em exemplos.ts, OK bg-auto ou bg-cover, rotacao background, OK selection
 
 import { useState } from 'react';
 import { GeistSans } from "geist/font/sans";
+import { exemplos } from "./exemplos-codigo";
 
 const API_URL = 'https://t-minus-r53c.onrender.com/api/compilar';
-const exemplos = {
-  1: {
-    nome: 'Inicial',
-    codigo: `acesso_livre nave TESTE <<\n\tacesso_livre iniciar_missao <> <<\n\t\ttransmitir<"Missao iniciada">\n\t>>\n>>`,
-  },
-  2: {
-    nome: 'Declaração de Variáveis pt.1',
-    codigo: `acesso_livre nave TESTE <<
-Unidade combustivel => 100
-Precisao velocidade => 27.5
-Sinal Estavel => ativo
-Sinal Instavel => inativo
-Mensagem planetaDestino => "Marte"
-Estimativa gravidade => 9.8
-Distancia Estelar => 9460730472580800
-Pulso codMissao => "A"
-Carga nivelRadiacao => 127           
-Eco anguloOrbital => 360
-transmitir <combustivel>
-transmitir <velocidade>
-transmitir <Estavel>
-transmitir <Instavel>
-transmitir <planetaDestino>
-transmitir <gravidade>
-transmitir <Estelar>
-transmitir <codMissao>
-transmitir <nivelRadiacao>
-transmitir <anguloOrbital>
->>`,
-  },
-  3: {
-    nome: 'Declaração de Variáveis pt.2',
-    codigo: `acesso_livre nave TESTE
-Precisao calculo => combustivel * velocidade
-Unidade resto => combustivel % 3
-Precisao media => <combustivel + velocidade> / 2
-Unidade decremento => combustivel - 10
-
-Sinal maisRapido => velocidade maior_que 20.0
-Sinal maisLento => velocidade menor_que 20.0
-Sinal igualOuMaior => combustivel maior_igual_que 100
-Sinal igualOuMenor => combustivel menor_igual_que 100
-Sinal igual => combustivel ==> 100
-Sinal diferente => combustivel != 100
-Sinal missaoOk => sistemaEstavel && combustivel maior_que 50
-Sinal alertaGeral => !sistemaEstavel || combustivel menor_que 10
->>`,
-  },
-  4: {
-    nome: 'Leitura',
-    codigo: `acesso_livre nave HAILMARY <<          
-        Unidade combustivel => capturar
->>`,
-  },
-  5: {
-    nome: 'Expressão Aritmética',
-    codigo: `acesso_livre nave HAILMARY <<          
- Unidade resultado => 2 + 3 * 4
-    	 transmitir<resultado>
->>`,
-  },
-  6: {
-    nome: 'Potência',
-    codigo: `acesso_livre nave HAILMARY<<
-        Unidade resultado => 2 ** 8
-        transmitir<resultado>
->>`,
-  },
-  7: {
-    nome: 'Condicional',
-    codigo: `acesso_livre nave HAILMARY<<
-            Unidade nivel => 30
-            trajeto<nivel menor_que 20> <<
-                 transmitir<"Critico">
-           >>  recalcular trajeto<nivel menor_que 50> <<
-            	transmitir<"Baixo">
-            >> abortar <<
-           		transmitir<"OK">
-            >>
->>`,
-  },
-  8: {
-    nome: 'Laço While',
-    codigo: `acesso_livre nave HAILMARY<<
-           orbita<Unidade i onde i menor_que 10> <<
-          	    transmitir<i>
-            >>
->>`,
-  },
-  9: {
-    nome: 'Laço For (passo um)',
-    codigo: `acesso_livre nave HAILMARY<<
-         	percorrer<Unidade de i 0 ate 10 com passo 1> <<
-                 transmitir<i>
-            >>
->>`,
-  },
-  10: {
-    nome: 'Laço For (passo maior do que um)',
-    codigo: `acesso_livre nave HAILMARY<<
-         	percorrer<Unidade de i 0 ate 10 com passo 2> <<
-                 transmitir<i>
-            >>
->>`,
-  },
-  11: {
-    nome: 'Função',
-    codigo: `
-    acesso_livre nave HAILMARY <<
-          Unidade dobrar<Unidade x><<
-            	retornar x + x
-          >>
->>
-          `,
-  },
-  12: {
-    nome: 'Chamada de Função',
-    codigo: `
-    acesso_livre nave HAILMARY <<
-           Unidade dobrar<Unidade x> <<
-            	retornar x + x
-            >>
-            Unidade resultado => dobrar<10>
-            transmitir<resultado>
->>`
-
-,
-  },
-};
 
 export default function Compilador() {
   const [codigo, setCodigo] = useState('');
@@ -201,12 +73,14 @@ export default function Compilador() {
 
       <div className={`${GeistSans.className} 
         bg-[url(/wallpaper-tminus.png)] 
-        bg-auto flex justify-center flex-col h-screen lg:p-0 p-10 items-center`}>
+        bg-auto flex justify-center flex-col h-screen lg:p-0 p-10 items-center
+        selection:bg-white selection:text-black
+        `}>
         <h1 className="font-bold text-6xl mb-">T-Minus</h1>
       <p className="font-base text-xs lg:mx-70 mb-1 text-white text-center">
         linguagem de programação desenvolvida em Java com compilador traduzindo para Pascal.
       </p>
-
+      
       <div id="tminus-pascal" className="flex flex-col gap-2 lg:flex-row mt-2">
         
         <div id="tminus" className="flex lg:flex-row flex-col gap-[5.5]">
@@ -236,15 +110,17 @@ export default function Compilador() {
               onChange={(e) => setCodigo(e.target.value)}
               rows={16}
               spellCheck={false}
-              className="w-[420px] text-xs p-4 box-border border-1 bg-black/20 border-zinc-300 rounded-sm 
-                focus:outline-none focus:border-white"
+              className="w-[300px] sm:w-[420px] text-xs p-4 box-border border-1 bg-black/20 border-zinc-400
+                focus:outline-none focus:border-white focus:bg-black/40"
             />
             <button
               onClick={traduzir}
               disabled={carregando}
-              className="text-sm border-1 lg:mb-0 mb-2 rounded-sm mt-1 bg-white text-black hover:bg-black hover:text-white hover:border-zinc-400 hover:cursor-pointer"
+              className="text-xs border-1 lg:mb-0 mb-2 rounded-xs mt-1 bg-black/30 text-zinc-300
+               hover:bg-black hover:cursor-pointer hover:bg-white hover:text-black hover:border-white"
             >
-              {carregando ? 'Compilando...' : 'Traduzir para Pascal'}
+              
+              {carregando ? 'conectando ao servidor! aguarde cerca de 40s...' : 'Traduzir para Pascal'}
             </button>
           </div>
         </div>
@@ -257,19 +133,20 @@ export default function Compilador() {
 
 
           {/* só renderiza a caixa de resultado quando existir algo pra mostrar */}
-          {resultado && (
+          {/* {resultado && ( */}
             <div id="pascal">
-              <h3 className="text-xs flex justify-center items-center bg-white text-black">{erro ? 'Erro:' : 'Pascal gerado:'}</h3>
+              <h3 className="text-xs flex justify-center items-center bg-white text-black">{erro ? 'Erro' : 'Pascal'}</h3>
               <textarea
                 readOnly
                 value={resultado}
                 rows={16}
                 spellCheck={false}
-                className="w-[420px] text-xs p-4 box-border border-1 bg-black/20 border-zinc-300 rounded-sm 
-                focus:outline-none focus:border-white"
+                className="w-[300px] sm:w-[420px] text-xs p-4 box-border border-1 bg-black/20 border-zinc-400
+                focus:outline-none focus:border-white focus:bg-black/40
+                "
               />
             </div>
-          )}
+          {/* )} */}
         </div>
 
         {/* <p>para conferir o resultado do pascal, basta acessar: https://onecompiler.com/pascal#draft-snrb</p> */}
