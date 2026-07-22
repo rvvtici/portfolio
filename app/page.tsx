@@ -39,11 +39,13 @@ export default function Home() {
 <div className="h-screen bg- bg-cover bg-[#121935] text-white">
  
 
-<main className="text-sm mx-90 p-20">
+<main className="text-sm mx-90">
   
-  <div className="flex flex-row justify-center">
+  <div className="flex flex-row pt-4 justify-center">
     <div className="">    
-        <Image src="/icon2.jpeg" width={300} height={300} className="block p-[1px]" alt="logo github"/>
+        <Image src="/icon1.png"
+         width={300} height={300} 
+         className="pr-[20px] pb-2" alt="icon site"/>
     </div>
 
 <div className="flex mx-1 flex-col">
@@ -87,67 +89,75 @@ export default function Home() {
 
   {/* <Carrossel /> */}
 
-  <div>
-    <h2 className="text-base font-bold">
+  <div className="flex flex-col justify-start ">
+    <h2 className="text-base mt-1 font-bold">
         projetos
     </h2>
 
     <div className="flex flex-row">
-      <p><span className="font-semibold">→ t-minus:</span> criação de linguagem de programação em Java com compilador p/ Pascal
-      <a target="_blank" href="/t-minus" className="hover:pointer"> [demo] </a>
-      <a target="_blank" href="https://github.com/rvvtici/t-minus" className="hover:pointer"> [github] </a>
+      <p><span className="font-semibold">→ t-minus:</span> criação de linguagem de programação em java com compilador p/ pascal
+      <a target="_blank" href="/t-minus" className="hover:pointer"> <span className="text-cyan-500 font-semibold underline hover:pointer">[demo]</span> </a>
+      <a target="_blank" href="https://github.com/rvvtici/t-minus" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
       {/* <a> [sobre] </a> */}
         </p>
     </div>
 
-        <div className="flex flex-row">
-      <p><span className="font-semibold">→ glider:</span> 
-         sistema de gestão aerportuárioa - arquitetura de banco de dados
-      <a target="_blank" href="/t-minus" className="hover:pointer"> [demo] </a>
-      <a target="_blank" href="https://github.com/rvvtici/t-minus" className="hover:pointer"> [github] </a>
-      {/* <a> [sobre] </a> */}
-        </p>
+    <div className="flex flex-row">
+      <p><span className="font-semibold">→ glider:</span> sistema de gestão aeroportuária c/ arquitetura em múltiplos bancos de dados, 
+       voltado para operações internas & monitoramento em tempo real
+        <a target="_blank" href="https://github.com/rvvtici/sistema-gestao-aeroportuaria" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
+      </p>
     </div>
 
-        <div className="flex flex-row">
-      <p><span className="font-semibold">→ clínica médica:</span> 
-        full stack: web & app p/ pacientes, medicos e atendentes [github]
-      <a target="_blank" href="/t-minus" className="hover:pointer"> [demo] </a>
-      <a target="_blank" href="https://github.com/rvvtici/t-minus" className="hover:pointer"> [github] </a>
-      {/* <a> [sobre] </a> */}
+      <div className="flex flex-row">
+      <p><span className="font-semibold">→ clínica médica:</span> full stack: sistema web & aplicativo p/ pacientes, médicos e atendentes
+      {/* <a target="_blank" href="https://snack.expo.dev/@rvvtici/clinica-medica" className="hover:pointer"> <span className="text-cyan-500 font-semibold underline hover:pointer">[demo app]</span> </a> */}
+      <a target="_blank" href="https://github.com/rvvtici/clinica-medica" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
+      
         </p>
     </div>
-
-        <div className="flex flex-row">
-      <p><span className="font-semibold">→ t-minus:</span> criação de linguagem de programação em Java com compilador p/ Pascal
-      <a target="_blank" href="/t-minus" className="hover:pointer"> [demo] </a>
-      <a target="_blank" href="https://github.com/rvvtici/t-minus" className="hover:pointer"> [github] </a>
-      {/* <a> [sobre] </a> */}
-        </p>
-    </div>
-
   </div>
   
+  <h2 className="text-base mt-1 font-bold">
+      ferramentas & habilidades
+  </h2>
+  <p>
+    <span className="font-semibold">linguagens:</span> python, java, c, c++, react, javascript, typescript, 
+  </p>
+  <p>
 
-<h2 className="font-bold">
-  ferramentas & habilidades:
-</h2>
-linguagens: python,  java, js, ts, c, c++ [maratona], 
-frontend: nextjs, talwind css, react
-backend: django, springboot
-database: postgresql, mongodb, cassandra, redis, firebase
-servers: vercel; render
-ferramentas: docker
+<span className="font-semibold">
+  frontend:
+</span> nextjs, talwind css, react
+  </p>
 
-<h2 className="font-bold">
-  interesses
+  <p>
+<span className="font-semibold">
+  backend:
+</span> django, springboot
+  </p>
+  <p>
+<span className="font-semibold">
+  database:
+</span> postgresql, mongodb, cassandra, redis, firebase
+  </p>
+  <p>
+<span className="font-semibold">
+  servers:
+</span> vercel, render
+  </p>
+  <p>
+<span className="font-semibold">
+  ferramentas:
+</span> docker
+  </p>
+
+<h2 className="text-base mt-1 font-bold">
+    interesses
 </h2>
-criação geral, principalmente visdev & concept art
-programação competitiva
-jogos
-aplicações/ux únicas e marcantes
-fantasia
-leitura
+<p>
+  criação em geral, principalmente visdev & concept art. programação competitiva, jogos, fantasia e leitura.
+</p>
 
 
 </main>
