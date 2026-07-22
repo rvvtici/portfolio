@@ -7,29 +7,29 @@ import Education from "./education";
 import Experience from "./experiences";
 import { useState } from "react";
 
-function Carrossel(){
-  const [aba, setAba] = useState("projetos");
+// function Carrossel(){
+//   const [aba, setAba] = useState("projetos");
 
-  const conteudo = {
-    projetos: <p>teste1</p>,
+//   const conteudo = {
+//     projetos: <p>teste1</p>,
 
-    habilidades: <p>teste2</p>,
+//     habilidades: <p>teste2</p>,
 
-    interesses: <p>teste3</p>,
-  };
+//     interesses: <p>teste3</p>,
+//   };
 
-  return (
-    <div>
-      <div className="flex gap-2 justify-center">
-        <button onClick={() => setAba("projetos")}>projetos</button>
-        <button onClick={() => setAba("habilidades")}>habilidades</button>
-        <button onClick={() => setAba("interesses")}><p className="underline">interesses</p></button>
-      </div>
+//   return (
+//     <div>
+//       <div className="flex gap-2 justify-center">
+//         <button onClick={() => setAba("projetos")}>projetos</button>
+//         <button onClick={() => setAba("habilidades")}>habilidades</button>
+//         <button onClick={() => setAba("interesses")}><p className="underline">interesses</p></button>
+//       </div>
 
-      <div className="transition delay-200" >{conteudo[aba]}</div>
-    </div>
-  );
-}
+//       <div className="transition delay-200" >{conteudo[aba]}</div>
+//     </div>
+//   );
+// }
 
 
 export default function Home() {
