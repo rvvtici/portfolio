@@ -36,26 +36,34 @@ export default function Home() {
   return (
   
 
-<div className="h-screen bg- bg-cover bg-[#121935] text-white">
- 
+<div className="h-screen bg-cover bg-[url(/781330.png)] text-white">
+ {/* bg-[url(/781330.png)] */}
+{/* bg-[#121935] */}
 
-<main className="text-sm mx-90">
+
+{/* bg-zinc-900/80 */}
+<main className="text-sm sm:mx-0 md:mx-44 lg:mx-70 xl:mx-90 lg:pt-10 selection:bg-cyan-700 ">
   
-  <div className="flex flex-row pt-4 justify-center">
-    <div className="">    
-        <Image src="/icon1.png"
-         width={300} height={300} 
-         className="pr-[20px] pb-2" alt="icon site"/>
-    </div>
+<div className="flex sm:flex-row flex-col pt-4 justify-center bg-zinc-400/30 itens-center">
+  <div className="shrink-0 w-[200px] h-[200px]">
+    <Image
+      src="/icon1.png"
+      loading="eager"
+      width={200}
+      height={200}
+      className="pr-[10px] pb-2 w-full h-full"
+      alt="icon site"
+    />
+  </div>
 
-<div className="flex mx-1 flex-col">
+  <div className="flex mx-1 flex-col min-w-0">
     <h1 className="font-bold text-xl">ravi macedo ticianelli lima</h1>
     <p>estudante de ciência da computação @ <a target="_blank" href="https://fei.edu.br" className="text-cyan-500 font-semibold underline hover:pointer">fei</a></p>
     <p>desenvolvedor full-stack</p>
     <p>atualmente: estágiario -  desenvolvimento de automação de processos @ <a href="https://www.zeppelin-la.com/" className="text-cyan-500 font-semibold underline hover:pointer">zeppelin systems latin america</a></p>    
     
       
-    <div id="links" className="flex flex-row gap-2">
+    <div id="links" className="flex flex-row pt-4 gap-2">
       <a target="_blank" href="https://github.com/rvvtici" className="text-cyan-500 font-semibold underline hover:pointer">
         <p>
           github
@@ -89,8 +97,10 @@ export default function Home() {
 
   {/* <Carrossel /> */}
 
-  <div className="flex flex-col justify-start ">
-    <h2 className="text-base mt-1 font-bold">
+  <div className="flex flex-col bg-zinc-950/45 justify-end">
+
+  <div className="flex mt-2 mx-0 p-2 flex-col">
+    <h2 className="text-lg mt-2 font-bold">
         projetos
     </h2>
 
@@ -104,25 +114,25 @@ export default function Home() {
 
     <div className="flex flex-row">
       <p><span className="font-semibold">→ glider:</span> sistema de gestão aeroportuária c/ arquitetura em múltiplos bancos de dados, 
-       voltado para operações internas & monitoramento em tempo real
-        <a target="_blank" href="https://github.com/rvvtici/sistema-gestao-aeroportuaria" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
+       voltado para operações internas & monitoramento em tempo real <a target="_blank" href="https://github.com/rvvtici/sistema-gestao-aeroportuaria" className="text-cyan-500 font-semibold underline hover:pointer">[github]</a>
       </p>
     </div>
 
       <div className="flex flex-row">
       <p><span className="font-semibold">→ clínica médica:</span> full stack: sistema web & aplicativo p/ pacientes, médicos e atendentes
-      {/* <a target="_blank" href="https://snack.expo.dev/@rvvtici/clinica-medica" className="hover:pointer"> <span className="text-cyan-500 font-semibold underline hover:pointer">[demo app]</span> </a> */}
-      <a target="_blank" href="https://github.com/rvvtici/clinica-medica" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
+      {/* <a target="_blank" href="https://snack.expo.dev/@rvvtici/clinica-medica" className="hover:pointer"> <span className="text-cyan-500 font-semibold underline hover:pointer">[demo app]</span> </a> */} <a target="_blank" href="https://github.com/rvvtici/clinica-medica" className="text-cyan-500 font-semibold underline hover:pointer"> [github] </a>
       
         </p>
     </div>
   </div>
   
-  <h2 className="text-base mt-1 font-bold">
+  <div className="mt-2 mx-0 p-2">
+
+  <h2 className="text-lg font-bold">
       ferramentas & habilidades
   </h2>
   <p>
-    <span className="font-semibold">linguagens:</span> python, java, c, c++, react, javascript, typescript, 
+    <span className="font-semibold">linguagens:</span> python, java, c, c++, react, javascript, typescript
   </p>
   <p>
 
@@ -152,14 +162,21 @@ export default function Home() {
 </span> docker
   </p>
 
-<h2 className="text-base mt-1 font-bold">
-    interesses
-</h2>
-<p>
-  criação em geral, principalmente visdev & concept art. programação competitiva, jogos, fantasia e leitura.
-</p>
 
+  </div>
 
+<div className="bg-slate-950/40 mt-2 mx-0 p-2">
+
+  <h2 className="text-lg font-bold">
+      interesses
+  </h2>
+  <p>
+    criação em geral, principalmente visdev & concept art. programação competitiva, jogos, fantasia e leitura.
+  </p>
+</div>
+
+</div>
+  
 </main>
 </div>
 
