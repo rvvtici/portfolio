@@ -36,15 +36,15 @@ export default function Home() {
   return (
   
 
-<div className="h-screen bg-cover bg-[url(/781330.png)] text-white">
+<div className="h-full bg-cover bg-[url(/781330.png)] text-white">
  {/* bg-[url(/781330.png)] */}
 {/* bg-[#121935] */}
 
 
 {/* bg-zinc-900/80 */}
-<main className="text-sm sm:mx-0 md:mx-44 lg:mx-70 xl:mx-90 lg:pt-10 selection:bg-cyan-700 ">
+<main className="text-sm p-3 sm:mx-4 sm:p-4 md:mx-44 md:pb-10 lg:pb-20 lg:mx-70 lg:pt-10 xl:mx-90 selection:bg-cyan-700 ">
   
-<div className="flex sm:flex-row flex-col pt-4 justify-center bg-zinc-400/30 itens-center">
+<div className="flex sm:flex-row flex-col px-4 pt-4 justify-center bg-zinc-950/55 items-center">
   <div className="shrink-0 w-[200px] h-[200px]">
     <Image
       src="/icon1.png"
@@ -97,7 +97,7 @@ export default function Home() {
 
   {/* <Carrossel /> */}
 
-  <div className="flex flex-col bg-zinc-950/45 justify-end">
+  <div className="flex flex-col bg-zinc-950/55 justify-end">
 
   <div className="flex mt-2 mx-0 p-2 flex-col">
     <h2 className="text-lg mt-2 font-bold">
@@ -124,6 +124,15 @@ export default function Home() {
       
         </p>
     </div>
+
+    <div className="flex flex-row">
+      <p><span className="font-semibold">→ fei-baja:</span> criação de um sistema completo para acompanhamento de ferramentas, peças e 
+      consumíveis utilizados pela equipe FEI-Baja <a target="_blank" href="https://feibaja.vercel.app" className="text-cyan-500 font-semibold underline hover:pointer">[demo]</a> <a 
+      target="_blank" href="https://github.com/rvvtici/FEI-Baja" className="text-cyan-500 font-semibold underline hover:pointer">[github]</a>
+      
+      </p>
+    </div>
+
   </div>
   
   <div className="mt-2 mx-0 p-2">
@@ -165,7 +174,7 @@ export default function Home() {
 
   </div>
 
-<div className="bg-slate-950/40 mt-2 mx-0 p-2">
+<div className="mt-2 mx-0 p-2">
 
   <h2 className="text-lg font-bold">
       interesses
@@ -178,6 +187,11 @@ export default function Home() {
 </div>
   
 </main>
+
+{/* <footer className="justify-center items-center flex text-sm pt-4">
+<p className="bg-zinc-950/45 p-2 justify-center items-center">rvvtici @ 2026<br/>desenvolvido com Vercel, NextJS & tailwind css</p>
+</footer> */}
+
 </div>
 
 

@@ -73,7 +73,7 @@ export default function Compilador() {
 
       <div className={`${GeistSans.className} 
         bg-[url(/wallpaper-tminus.png)] 
-        bg-auto flex justify-center flex-col h-screen lg:p-0 p-10 items-center
+        bg-auto flex justify-center flex-col h-full lg:h-screen lg:p-0 p-10 items-center
         selection:bg-white selection:text-black
         `}>
         <h1 className="font-bold text-6xl mb-">T-Minus</h1>
