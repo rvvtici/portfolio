@@ -36,10 +36,14 @@ export default function Home() {
   return (
   
 
-<div className="h-full bg-cover bg-[url(/781330.png)] text-white">
- {/* bg-[url(/781330.png)] */}
-{/* bg-[#121935] */}
-
+<div className="relative h-full text-white">
+  <Image
+    src="/wallpaper-home.png"
+    alt=""
+    fill
+    priority
+    className="object-cover -z-10"
+  />
 
 {/* bg-zinc-900/80 */}
 <main className="text-sm p-3 sm:mx-4 sm:p-4 md:mx-44 md:pb-10 lg:pb-20 lg:mx-70 lg:pt-10 xl:mx-90 selection:bg-cyan-700 ">
@@ -48,7 +52,7 @@ export default function Home() {
   <div className="shrink-0 w-[200px] h-[200px]">
     <Image
       src="/icon1.png"
-      loading="eager"
+      priority
       width={200}
       height={200}
       className="pr-[10px] pb-2 w-full h-full"

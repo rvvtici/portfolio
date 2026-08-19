@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { GeistSans } from "geist/font/sans";
 import { exemplos } from "./exemplos-codigo";
+import Image from 'next/image';
 
 const API_URL = 'https://t-minus-r53c.onrender.com/api/compilar';
 
@@ -65,17 +66,32 @@ export default function Compilador() {
   //bg-auto ou bg-cover
   return (
     <>
-      <link
-        rel="preload"
-        href="/wallpaper-tminus.png"
-        as="image"
+    <div className={`${GeistSans.className} relative
+         flex justify-center flex-col h-full lg:h-screen lg:p-0 p-10 items-center
+        selection:bg-white selection:text-black
+        `}>
+      <Image
+        src="/wallpaper-tminus.png"
+        alt=""
+        fill
+        priority
+        className="object-cover -z-10"
       />
 
-      <div className={`${GeistSans.className} 
+      {/* <div className={`${GeistSans.className} 
         bg-[url(/wallpaper-tminus.png)] 
         bg-auto flex justify-center flex-col h-full lg:h-screen lg:p-0 p-10 items-center
         selection:bg-white selection:text-black
-        `}>
+        `}> */}
+
+
+
+
+
+
+
+
+          
         <h1 className="font-bold text-6xl mb-">T-Minus</h1>
       <p className="font-base text-xs lg:mx-70 mb-1 text-white text-center">
         linguagem de programação desenvolvida em Java com compilador traduzindo para Pascal.
