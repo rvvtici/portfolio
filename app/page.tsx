@@ -36,7 +36,7 @@ export default function Home() {
   return (
   
 
-<div className="relative h-full text-white">
+<div className="relative min-h-screen text-white">
   <Image
     src="/wallpaper-home.png"
     alt=""
@@ -44,6 +44,7 @@ export default function Home() {
     priority
     className="object-cover -z-10"
   />
+
 
 {/* bg-zinc-900/80 */}
 <main className="text-sm p-3 sm:mx-4 sm:p-4 md:mx-44 md:pb-10 lg:pb-20 lg:mx-70 lg:pt-10 xl:mx-90 selection:bg-cyan-700 ">

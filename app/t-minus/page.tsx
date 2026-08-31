@@ -75,6 +75,7 @@ export default function Compilador() {
         alt=""
         fill
         priority
+        
         className="object-cover -z-10"
       />
 
